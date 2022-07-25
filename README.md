@@ -1,4 +1,6 @@
 # iOS Insiders
+## Project Description
+The aim of iOS Insiders is to provide users a place to recieve information about Apple. This is in the form of news, reviews, deals and guides
 
 ## Aims
 - [ ] - Connect to a datbase
