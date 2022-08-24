@@ -8,7 +8,6 @@
 	<div class="content-container">
 		<article class="flex-element-2 top-story">
 			<h2>Top Story</h2>
-			<hr>
 			article here
 			<img src="no-source.png" width="100px" height="70px" alt="Article Image">
 		</article>
@@ -20,7 +19,6 @@
 			<h2>
 				Latest Posts
 			</h2>
-			<hr>
 			<article>
 				<div>
 				article here
@@ -36,6 +34,6 @@
 		</div>
 	</div>
 	<div class="donate-banner content-container">
-			If you want to support the website, you can donate <a href="#"> here</a>.
+			If you want to support the website, you can donate&nbsp;<a href="#">here</a>.
 	</div>
 </body>

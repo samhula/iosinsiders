@@ -133,3 +133,19 @@ footer ul li {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+#write-article-title { 
+	width: 50%;
+}
+
+#write-article-tags {
+	width: 50%;
+}
+
+#write-article-description {
+	width: 70%;
+}
+
+#write-article-content {
+	width: 100%;
+}
