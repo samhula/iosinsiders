@@ -6,6 +6,7 @@
 	font-family: 'Atkinson Hyperlegible', sans-serif;
 	font-family: 'Fira Code', monospace;
 	font-family: 'Lato', sans-serif;
+	font-size: 100%;
 }
 
 .h1-container {
@@ -13,11 +14,27 @@
 	background: -webkit-linear-gradient(to right, #232526, #414345);
 	background: linear-gradient(to right, #232526, #414345);
 	text-align: center;
-	padding: 1%;
+	padding: 2%;
+	font-size: 2.5em;
 }
 
 .h1-container h1 a {
 	color: #ededed;
+}
+
+.toggle-hamburger{
+/*	display: flex;*/
+	flex-direction: column;
+	height: 20px;
+	width: 30px;
+	justify-content: space-between;
+}
+
+.toggle-hamburger .hamburger-bar {
+	height: 10px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
 }
 
 .nav-container {
@@ -105,6 +122,13 @@ footer ul li {
 .top-story, .recent-article, .donate-banner, .post-article {
 	background-color: #3c3c3d;
 	margin: 2% 5%;
+	border-radius: 5px;
+	padding: 1%;
+}
+
+.select-content-type {
+	background-color: #3c3c3d;
+	margin: 2% 0% 2% 5%;
 	border-radius: 5px;
 	padding: 1%;
 }

@@ -1,6 +1,11 @@
 <body>
 	<div class="h1-container">
-		<h1><a href="index.php">iOS Insiders</a></h1>
+		<h1><a href="index.php">Tech Website</a></h1>
+		<a href="#" class="toggle-hamburger">
+			<span class="hamburger-bar"></span>
+			<span class="hamburger-bar"></span>
+			<span class="hamburger-bar"></span>
+		</a>
 	</div>
 	<?php 
 		require_once 'nav.php';
@@ -36,6 +41,6 @@
 		</div>
 	</div>
 	<div class="donate-banner content-container">
-			If you want to support the website, you can donate <a href="#"> here</a>.
+			If you want to support the website, you can donate<a href="#"> here</a>.
 	</div>
 </body>
