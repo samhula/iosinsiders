@@ -13,7 +13,7 @@
 	<div class="content-container">
 		<div class="flex-element-1 select-content-type">
 			<div class="select-option">
-			Section
+				Section
 			</div>
 			<div class="select-option">
 				Paragraph
