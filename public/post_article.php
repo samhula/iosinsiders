@@ -27,15 +27,16 @@
 		</div>
 		<form class="post-article flex-element-6">
 			<label for="title">Article Title: </label>
-			<input type="text" name="title"><br>
+			<input type="text" name="title" id="write-article-title"><br>
 			<label for="tags">Article Tags: </label>
-			<input type="text" name="tags"><br>
+			<input type="text" name="tags" id="write-article-tags"><br>
 			<label for="description">Article Description: </label>
 			<input type="text" name="description"><br>
 			<label for="description">Article Category: </label>
 			<input type="text" name="description"><br>
+			<input type="text" name="description" id="write-article-description"><br>
 			<label for="article">Article: </label>
-			<input type="text" name="article">
+			<input type="text" name="article" id="write-article-content">
 		</form>
 	</div>
 </body>
