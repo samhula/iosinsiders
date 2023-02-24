@@ -8,13 +8,8 @@
 }
 
 .h1-container {
-	text-align: left;
-	padding: 1.5%;
 	font-size: 2.5em;
-}
-
-.h1-container h1 a {
-	color: #fcfcfc;
+	color: white;
 	text-shadow: -3px 3px 11px rgba(34, 0, 0, 0.74);
 }
 
@@ -34,10 +29,14 @@
 }
 
 .nav-container {
+	margin-left: 10%;
+	margin-right: 10%;
 	display: flex;
-	margin-left: 20%;
-	margin-right: 20%;
-/*	justify-content: space-between;*/
+	padding: 1%;
+}
+
+.nav-container li {
+	text-align: center;
 }
 
 nav {
@@ -50,15 +49,14 @@ nav ul {
 }
 
 nav ul li {
-	padding: 1%;
 	text-align: center;
-	margin: auto;
 }
 
 nav ul li a {
 	text-shadow: -1px 1px 11px rgba(34, 0, 0, 0.74);
 	color: #ededed;
 	transition: color 0.3s;
+	text-align: center;
 }
 
 nav ul li a:hover {

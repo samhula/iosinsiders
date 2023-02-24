@@ -1,11 +1,9 @@
 <!-- Navigation Bar -->
 <nav>
 	<ul class="nav-container">
-		<div class="h1-container">
-			<h1><a href="<?php echo URL?>"><?php echo WEBSITE_NAME?></a></h1>
-		</div>
+		<li><a href="<?php echo URL?>"><h1 class="h1-container"><?php echo WEBSITE_NAME?></h1></a></li>
 		<?php
-			populateNavBar(CATEGORIES);
+			setNavBar(CATEGORIES);
 		?>
 	</ul>
 </nav>
