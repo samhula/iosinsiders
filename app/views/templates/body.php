@@ -72,25 +72,28 @@
 			</article>
 		</div>
 	</div>
-	<div class="content-container element">
-			Here is some jibber jabba
+	<div class="content-container">
+		<div class="element flex-element-1">
+				Here is some jibber jabba
+		</div>
+		<div class="element flex-element-5">
+				Here is some jibber jabba
+		</div>
+		<div class="element flex-element-2">
+				Here is some jibber jabba
+		</div>
 	</div>
-	<div class="content-container element">
-			Here is some jibber jabba
-	</div>
-	<div class="content-container element">
-			Here is some jibber jabba
-	</div>
-	<div class="content-container element">
-			Here is some jibber jabba
-	</div>
-	<div class="content-container element">
-			Here is some jibber jabba
-	</div>
-	<div class="content-container element">
-			Here is some jibber jabba
-	</div>
-	<div class="content-container element">
-			Here is some jibber jabba
-	</div>
+		<div class="element flex-element-2">
+				Here is some jibber jabba
+		</div>
+		<div class="element flex-element-2">
+				Here is some jibber jabba
+		</div>
+		<div class="element flex-element-2">
+				Here is some jibber jabba
+		</div>
+		<div class="element flex-element-2">
+				Here is some jibber jabba
+		</div>
+	
 </body>

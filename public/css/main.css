@@ -33,6 +33,7 @@
 	margin-right: 10%;
 	display: flex;
 	padding: 1%;
+	align-items: center;
 }
 
 .nav-container li {
