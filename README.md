@@ -1,6 +1,6 @@
 # Tech News Website
 ## Project Description
-The aim of [iOS Insiders](https://www.iosinsiders.com) is to provide users a place to recieve information about Apple. This is in the form of news, reviews, deals and guides
+The aim of [Tech Website](https://www.google.com) is to provide users a place to recieve information about Apple. This is in the form of news, reviews, deals and guides
 
 ## Aims
 - [x] - Connect to a database
