@@ -4,10 +4,10 @@
 	<title>
 		<?php 
 			if(isset($data['id']) && $data['id'] != ''){
-				echo $data['page_title'].' - '.$data['id'];
+				echo $data['page_title'].' | '.$data['id'];
 			}
 			else{
-				echo $data['page_title'];
+				echo $data['page_title']." | ".WEBSITE_NAME;
 			}
 		?>	
 	</title>

@@ -10,8 +10,8 @@
 	define('FOOTER_CATEGORIES', ['Donate', 'About', 'Contact', 'Test', 'Test', 'Test']);
 
 	# Setting database credentials
-	define('DB_TYPE', 'mysqli');
-	define('DB_NAME', 'techwebsite');
+	define('DB_TYPE', 'mysql');
+	define('DB_NAME', 'tech_website');
 	define('DB_USER', 'root');
 	define('DB_PASSWORD', '');
 	define('DB_HOST', 'localhost');

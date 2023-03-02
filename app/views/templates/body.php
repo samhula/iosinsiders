@@ -95,5 +95,10 @@
 		<div class="element flex-element-2">
 				Here is some jibber jabba
 		</div>
-	
+
+		<?php if(isset($_SESSION['user_name'])): ?>
+
+              Hi <?=$_SESSION['user_name']?>
+
+            <?php endif; ?>
 </body>

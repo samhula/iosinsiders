@@ -40,6 +40,10 @@
 	text-align: center;
 }
 
+.nav-container .nav-right{
+	display: inline-block;
+}
+
 nav {
 	font-size: large;
 	background-color: #3d3d3d;
@@ -160,7 +164,11 @@ footer ul li a {
 	}
 }
 
-.top-story, .recent-article, .donate-banner, .post-article , .element{
+.login-form input[type=text], .login-form input[type=password]{
+	box-shadow: 0 0 5px #616161;
+}
+
+.top-story, .recent-article, .donate-banner, .post-article , .element, .login-form, .upload{
 	background-color: #f2f2f2;
 	margin: 2% 5%;
 	border-radius: 2px;
@@ -196,6 +204,11 @@ footer ul li a {
 
 .recent-article {
 	margin-left: 0%;
+}
+
+.login-form {
+	width: 100%;
+	text-align: center;
 }
 
 .donate-banner {
