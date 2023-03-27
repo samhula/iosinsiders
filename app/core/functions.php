@@ -31,6 +31,12 @@
 	// Echoing out the footer
 	function setFooter($footer){
 		foreach ($footer as $category) {
-			echo '<li class="flex-element-1"><a href="'.URL.'/public/'.strtolower($category).'">'.$category.'</a></li>';
+			echo '<li class="flex-element-1 centre"><a href="'.URL.'/public/'.strtolower($category).'">'.$category.'</a></li>';
+		}
+	}
+
+	function chooseCategory($cat){
+		foreach ($cat as $category) {
+			echo '<option value="'.$category.'">'.$category.'</option>';
 		}
 	}

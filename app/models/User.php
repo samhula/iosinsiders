@@ -46,7 +46,7 @@ class User{
 
 			if($data){
 				// Successful signup
-				header("Location:".URL."/public/login");
+				header("Location: ".URL."/public/login");
 			}
 			else {
 				$_SESSION['error'] = "Incorrect username or password";
@@ -55,6 +55,25 @@ class User{
 		else {
 			echo 'error';	
 		}
+	}
+
+	public function isLoggedIn(){
+		if (isset($_SESSION['user_id'])){
+
+			$query = "select * from users where Username = :username && ePassword = :password limit 1";
+			$data = $DB->read($query, $arr);
+
+			if(is_array($data)){
+				// User is logged in 
+				// Assign a value to the session
+				$_SESSION['user_id'] = $data[0]->Id;
+				$_SESSION['username'] = $data[0]->Username;
+
+				return true;
+			}
+		}
+
+		return false;
 	}
 
 	public function logout(){

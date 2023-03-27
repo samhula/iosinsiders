@@ -130,6 +130,11 @@ footer ul li a {
 	flex: 6;
 }
 
+.centre {
+	text-align: center;
+	justify-content: center;
+}
+
 .stock-info {
 	background-color: #212224;
 	color: white;
@@ -164,8 +169,20 @@ footer ul li a {
 	}
 }
 
-.login-form input[type=text], .login-form input[type=password]{
+.login-form form, .upload-content form {
+	width: 100%;
+}
+
+.login-form input[type=text], .login-form input[type=password], .upload-content input[type=text]{
 	box-shadow: 0 0 5px #616161;
+	padding: 0.5%;
+	margin: 10px;
+	width: 20%;
+}
+
+#write-article-content {
+	width: 50%;
+	resize: none;
 }
 
 .top-story, .recent-article, .donate-banner, .post-article , .element, .login-form, .upload{
@@ -226,4 +243,26 @@ footer ul li a {
 .margin-left-right-auto {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.no-padding-left-right {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.no-margin-left-right {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.redirect-link {
+	color: #234099;
 }

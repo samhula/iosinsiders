@@ -1,13 +1,13 @@
 <?php
 	# Setting server-wide constants
 	define('URL', 'http://localhost/iOSInsiders');
-	define('WEBSITE_NAME', 'Tech Website');
+	define('WEBSITE_NAME', 'Tech Rats');
 
 	# Navigation Categories
-	define('CATEGORIES', ['News', 'Products', 'Reviews', 'Guides', 'AI']);
+	define('CATEGORIES', ['News', 'Reviews', 'Guides', 'AI']);
 
 	# Footer Categories
-	define('FOOTER_CATEGORIES', ['Donate', 'About', 'Contact', 'Test', 'Test', 'Test']);
+	define('FOOTER_CATEGORIES', ['Donate', 'About', 'Contact']);
 
 	# Setting database credentials
 	define('DB_TYPE', 'mysql');
