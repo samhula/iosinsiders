@@ -1,7 +1,9 @@
-<body>	
-	<?php
+<body>
+	<header>
+		<?php
 		require_once 'nav.php';
-	?>	
+		?>	
+	</header>
 	<div class="stock-info">
 		<div class="marquee-container">
 			<p class="stock-text">
@@ -77,7 +79,7 @@
 				Here is some jibber jabba
 		</div>
 		<div class="element flex-element-1 no-padding-left-right no-margin-left-right">
-				Here is some jibber jabba
+				Here is some jibber jabba. Here is some jibber jabba.  Here is some jibber jabba.  Here is some jibber jabba.  Here is some jibber jabba.
 		</div>
 		<div class="element flex-element-2">
 				Here is some jibber jabba
@@ -90,15 +92,15 @@
 				Here is some jibber jabba
 		</div>
 		<div class="element flex-element-2">
-				Here is some jibber jabba
+				Here is some jibber jabba 
 		</div>
 		<div class="element flex-element-2">
 				Here is some jibber jabba
 		</div>
 
-		<?php if(isset($_SESSION['user_name'])): ?>
-
-              Hi <?=$_SESSION['user_name']?>
-
-            <?php endif; ?>
+		<?php
+			if(isset($_SESSION['username'])){
+				echo 'Hi '. $_SESSION['username']; 
+			}
+		?>
 </body>

@@ -12,7 +12,7 @@ require_once 'nav.php';
 				<option value="non-option" selected disabled>Select Category</option>
 				<?php echo chooseCategory(CATEGORIES)?>
 			</select></br>
-			<textarea id="write-article-content"></textarea>
+			<textarea id="write-article-content" rows="40" placeholder="Please write your article here" required></textarea>
 			<button type="submit">Submit Article</button>
 		</form>
 	</div>

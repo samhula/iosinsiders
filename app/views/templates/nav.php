@@ -1,7 +1,9 @@
 <!-- Navigation Bar -->
 <nav>
-	<ul class="nav-container">
-		<li><a href="<?php echo URL?>/public/"><h1 class="h1-container"><?php echo WEBSITE_NAME?></h1></a></li>
+	<h1>
+		<a class="h1-container" href="<?php echo URL?>/public/"><?php echo WEBSITE_NAME?></a>
+	</h1>
+	<ul class="nav-links">
 		<?php
 			//echo '<span class="nav-right">';
 			setNavBar(CATEGORIES);
@@ -11,15 +13,15 @@
 		<?php
 			if (isset($_SESSION['username'])):
 		?>
-		<li class="flex-element-1">
-			<a href="<?php echo URL?>/public/logout">Logout</a>
-		</li>
+			<li>
+				<a href="<?php echo URL?>/public/logout">Logout</a>
+			</li>
 		<?php
-		else:
+			else:
 		?>
-		<li class="flex-element-1">
+		<li>
 			<a href="<?php echo URL?>/public/login">Login</a>
 		</li>
-	<?php endif?>
+		<?php endif?>
 	</ul>
 </nav>
