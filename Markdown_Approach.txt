@@ -1,0 +1,45 @@
+Titles
+# H1
+## H2
+### H3
+
+Paragraphs
+[Separated by empty line]
+
+Bold
+* *
+
+Italics
+/i /i
+
+Strikethrough
+~~ ~~
+
+Quotes
+> <
+
+Link
+[!link Alt Text](link)
+
+Images
+[!img Alt Text](filename)
+
+Videos
+[!vid Alt Text](filename)
+
+Unordered List
+-
+-
+-
+
+Ordered List
+1.
+2. 
+3.
+
+Task lists
+[ ] (Unchecked)
+[x] (Checked)
+
+Author 
+@[username]
