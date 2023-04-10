@@ -43,7 +43,7 @@ nav {
 .nav-links li {
 	text-align: center;
 	display: inline-block;
-	margin: 0 2em;
+	margin: 0 1em;
 }
 
 .nav-links li a {
@@ -54,6 +54,19 @@ nav {
 
 .nav-links li a:hover {
 	color: white;
+}
+
+.nav-links .navbar-login {
+	background-color: #0093E9;
+	background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+	border-radius: 6px;
+	padding: 20%;
+}
+
+.nav-links .navbar-logout {
+	background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+	border-radius: 6px;
+	padding: 10%;
 }
 
 /*.page-content {
@@ -117,6 +130,7 @@ footer ul li a {
 .centre {
 	text-align: center;
 	justify-content: center;
+	align-items: center;
 }
 
 .stock-info {
@@ -152,16 +166,12 @@ footer ul li a {
 	}
 }
 
-.login-form form, .upload-content form {
-	width: 100%;
-}
-
-.login-form input[type=text], .login-form input[type=password], .upload-content input[type=text] , .upload-content textarea{
+.login-form input[type=text], .login-form input[type=password], .upload-content input[type=text], .upload-content select, .upload-content textarea{
 	box-shadow: 0 0 5px #616161;
 	padding: 0.5%;
 	margin: 10px;
-	width: 40%;
 	border: none;
+	width: 50%;
 }
 
 .login-form input[type=text]:focus, .login-form input[type=password]:focus, .upload-content input[type=text]:focus, .upload-content textarea:focus{
@@ -173,12 +183,16 @@ footer ul li a {
 	box-shadow: 0 0 5px #0e1e96;
 }
 
+.upload-content select {
+	width: 130px;
+}
+
 #write-article-content {
-	width: 50%;
+	width: 95%;
 	resize: none;
 }
 
-.top-story, .recent-article, .donate-banner, .post-article , .element, .login-form, .upload{
+.top-story, .recent-article, .donate-banner, .post-article, .element, .login-form, .upload{
 	background-color: #f2f2f2;
 	margin: 2% 5%;
 	border-radius: 2px;
@@ -266,4 +280,17 @@ footer ul li a {
 
 .red {
 	
+}
+
+.item-group{
+	display: block;
+}
+
+.upload-button {
+	width: 50%;
+	margin: auto;
+}
+
+img {
+	border-radius: 5px;
 }

@@ -13,7 +13,6 @@
 			echo '<li><a href="'.URL.'/public/'.strtolower($category).'">'.$category.'</a></li>';
 		}
 
-		
 			echo '<li>';
 			echo '	<form method="GET" action="#">';
 			echo '	<input type="text" placeholder="Search.." name="search">';

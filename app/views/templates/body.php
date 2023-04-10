@@ -36,9 +36,9 @@
 		<article class="flex-element-2 top-story">
 			<h2>Top Story</h2>
 			<hr>
-			<span class="top-story-content">
-				<img class="top-story-img" src="https://wallpaperaccess.com/full/469611.jpg" width="500px" alt="Article Image">
-				<span>
+			<div class="top-story-content">
+				<img class="top-story-img" src="https://media.4rgos.it/i/Argos/1121-m0014-m007-m050-m008-gaming-pcs-and-laptops-guide-as274382882?maxW=1200&qlt=75&fmt.jpeg.interlaced=true" width="500px" alt="Article Image">
+				<div>
 					<div>
 					Title
 					</div>
@@ -48,8 +48,8 @@
 					<div>
 						Category
 					</div>
-				</span>
-			</span>
+				</div>
+			</div>
 		</article>
 		<!-- USE CONTROLLER TO GET THE CORRECT ARTICLES -->
 		<!-- GET THE MOST IMPORTANT ARTICLE OF THE DAY -->
