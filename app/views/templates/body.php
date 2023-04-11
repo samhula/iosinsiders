@@ -37,8 +37,10 @@
 			<h2>Top Story</h2>
 			<hr>
 			<div class="top-story-content">
-				<img class="top-story-img" src="https://media.4rgos.it/i/Argos/1121-m0014-m007-m050-m008-gaming-pcs-and-laptops-guide-as274382882?maxW=1200&qlt=75&fmt.jpeg.interlaced=true" width="500px" alt="Article Image">
-				<div>
+				<div class="img-hover-zoom">
+					<img class="top-story-img thumbnail" src="https://media.4rgos.it/i/Argos/1121-m0014-m007-m050-m008-gaming-pcs-and-laptops-guide-as274382882?maxW=1200&qlt=75&fmt.jpeg.interlaced=true" width="500px" alt="Article Image">
+				</div>
+				<div class="story-contents">
 					<div>
 					Title
 					</div>
