@@ -146,6 +146,7 @@ footer ul li a {
   	display: inline-block;
   	transform:translateX(100%);
   	animation: marquee 30s linear infinite;
+  	cursor: default;
 }
 
 .marquee-container-2 {
