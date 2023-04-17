@@ -80,7 +80,7 @@
 		<div class="element flex-element-1">
 				Here is some jibber jabba
 		</div>
-		<div class="element flex-element-1 no-padding-left-right no-margin-left-right">
+		<div class="element flex-element-1 no-margin-left-right">
 				Here is some jibber jabba. Here is some jibber jabba.  Here is some jibber jabba.  Here is some jibber jabba.  Here is some jibber jabba.
 		</div>
 		<div class="element flex-element-2">
