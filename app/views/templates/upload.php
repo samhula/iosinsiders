@@ -2,7 +2,7 @@
 	require_once 'nav.php';
 ?>
 <body>
-	<form class="content-container upload upload-content" method="POST">
+	<form class="content-container upload upload-content" method="POST" enctype="multipart/form-data">
 		<div class="flex-element-1">
 			<div class="item-group centre">
 				<select name="category" id="template" required onchange="setTemplate()">
@@ -14,9 +14,9 @@
 					<option>Income Report</option>
 					<option>Blog</option>
 				</select>
-				<button class="upload-button centre">Upload Image</button>
-				<button class="upload-button centre">Upload Video</button>
-				<button class="upload-button centre">Upload File</button>
+				<input type="file" class="upload-button centre">
+				<input type="file" class="upload-button centre">
+				<input type="file" class="upload-button centre">
 			</div>
 		</div>
 		<div class="flex-element-3">
@@ -30,5 +30,5 @@
 			<button type="submit">Submit Article</button>
 		</div>
 	</form>
-	<script type="text/javascript" src="<?php echo URL?>/public/js/main.js"></script>
+	<script type="text/javascript" src="<?php echo URL?>/public/js/upload.js"></script>
 </body>

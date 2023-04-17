@@ -250,6 +250,10 @@ footer ul li a {
 	margin-left: 0%;
 }
 
+.element{
+	display: inline-block;
+}
+
 .login-form {
 	width: 100%;
 	text-align: center;
@@ -313,4 +317,10 @@ footer ul li a {
 
 img {
 	border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+	.element{
+		width: 100%;
+	}
 }

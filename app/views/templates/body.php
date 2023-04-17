@@ -76,33 +76,38 @@
 			</article>
 		</div>
 	</div>
-	<div class="content-container">
-		<div class="element flex-element-1">
-				Here is some jibber jabba
+	<div class="homepage-articles">
+		<div class="element">
+				This is some text.
 		</div>
-		<div class="element flex-element-1 no-margin-left-right">
-				Here is some jibber jabba. Here is some jibber jabba.  Here is some jibber jabba.  Here is some jibber jabba.  Here is some jibber jabba.
+		<div class="element">
+				This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. 
 		</div>
-		<div class="element flex-element-2">
-				Here is some jibber jabba
+		<div class="element">
+				This is some text. This is some text. This is some text. 
+		</div>
+		<div class="element">
+				This is some text.
+		</div>
+		<div class="element">
+				This is some text.
+		</div>
+		<div class="element">
+				This is some text.
+		</div>
+		<div class="element">
+				This is some text.
+		</div>
+		<div class="element">
+				This is some text.
+		</div>
+		<div class="element">
+				This is some text.
 		</div>
 	</div>
-		<div class="element flex-element-2">
-				Here is some jibber jabba
-		</div>
-		<div class="element flex-element-2">
-				Here is some jibber jabba
-		</div>
-		<div class="element flex-element-2">
-				Here is some jibber jabba 
-		</div>
-		<div class="element flex-element-2">
-				Here is some jibber jabba
-		</div>
-
-		<?php
-			if(isset($_SESSION['username'])){
-				echo 'Hi '. $_SESSION['username']; 
-			}
-		?>
+	<?php
+		if(isset($_SESSION['username'])){
+			echo 'Hi '. $_SESSION['username']; 
+		}
+	?>
 </body>

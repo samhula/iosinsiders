@@ -1,6 +1,6 @@
 <?php
 	# Setting server-wide constants
-	define('URL', 'http://localhost/iOSInsiders');
+	define('URL', 'http://localhost:8080/iOSInsiders');
 	define('WEBSITE_NAME', 'TechRatz');
 
 	# Navigation Categories
