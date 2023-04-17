@@ -323,4 +323,12 @@ img {
 	.element{
 		width: 100%;
 	}
+
+	nav{
+		display: block;
+	}
+
+	.nav-links li {
+		display: none;
+	}
 }
