@@ -9,6 +9,7 @@
 				<input placeholder="Password" type="password" name="password"></br>
 				<button type="submit">Submit</button>
 			</form>			
+			<?php echo $_SESSION['error']?>
 			<div>
 				Don't have an account? Sign up <a class="redirect-link" href=<?php echo URL."/public/signup"?>>here!</a>
 			</div>

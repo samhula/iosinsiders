@@ -28,9 +28,9 @@ function confirmTemplate(){
 	return false;
 }
 
-window.onbeforeunload = function(e) {
-  return "Do you want to exit this page?";
-};
+// window.onbeforeunload = function(e) {
+//   return "Do you want to exit this page?";
+// };
 
 function getTemplateData(){
 	const templateData = 

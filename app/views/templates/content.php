@@ -10,9 +10,9 @@ require_once 'nav.php';
 				<section class="content flex-element-2">
 					<h2 class="article-title">What is the best PC under £1000?</h2>
 					<div class="info-container">
-						By <span class="author">Author</span><span class="bullet">&#x2022;</span>Updated on</li> <span class="date-of-publish"> 18th April 2023</span>
+						By <span class="author">Author</span><span class="bullet">&#x2022;</span>Updated on <span class="date-of-publish"> 18th April 2023</span>
 					</div>
-					<img class="main-article-image" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/CA49/production/_129358715_gettyimages-1333127675-170667a.jpg.webp">
+					<img class="main-article-image" src="https://expertreviews.b-cdn.net/sites/expertreviews/files/styles/er_main_wide/public/2022/07/best-all-in-one-pc-lenovo-yoga-aio-7_0.jpg?itok=bGGBoeCI">
 					<!-- <div class="description-container">
 						This is the description
 					</div> -->
@@ -21,101 +21,9 @@ require_once 'nav.php';
 					<h3>Heading X</h3>
 					<p class="article-paragraph">Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. </p>
 					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					<h3>Heading X</h3>
-					
+					<p class="article-paragraph">
+						Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content.Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written article content. Here is some written articl
+					</p>
 				</section>
 				<section class="element table-of-contents flex-element-1">
 					<div class="flex-element-1">

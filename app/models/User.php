@@ -49,7 +49,7 @@ class User{
 				header("Location: ".URL."/public/login");
 			}
 			else {
-				$_SESSION['error'] = "Incorrect username or password";
+				$_SESSION['error'] = "Uh oh! An error has occured!";
 			}
 		}
 		else {
@@ -58,9 +58,11 @@ class User{
 	}
 
 	public function isLoggedIn(){
+		$DB = new Database();
 		if (isset($_SESSION['user_id'])){
 
-			$query = "select * from users where Username = :username && ePassword = :password limit 1";
+			$arr['user_id'] = $_SESSION['user_id'];
+			$query = "select * from users where Username = :username limit 1";
 			$data = $DB->read($query, $arr);
 
 			if(is_array($data)){
@@ -72,7 +74,6 @@ class User{
 				return true;
 			}
 		}
-
 		return false;
 	}
 
