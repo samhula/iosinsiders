@@ -3,12 +3,14 @@
 class Upload extends Controller {
 	
 	public function index(){
-		header("Location:" . URL . "/public/upload/article/");
+		header("Location:" . URL . "/public/upload/article");
 		die();
 	}
 
 	public function article(){
 		$user = $this->model("user");
+
+		$result = True;
 
 		// if(!$result = $user->isLoggedIn()){
 		// 	header("Location:" . URL . "/public/login");

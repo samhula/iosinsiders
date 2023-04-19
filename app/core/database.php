@@ -5,7 +5,6 @@ class Database {
 		try {
 			$string = DB_TYPE.":host=".DB_HOST.";dbname=".DB_NAME.";";
 			return $db = new PDO($string, DB_USER, DB_PASSWORD);
-			show($db);
 		}
 		catch(PDOException $e){
 			die($e->getMessage());
@@ -24,12 +23,10 @@ class Database {
 			}
 		}
 		else{
-
 			$check = $stm->execute($data);
 		}
 
-		if($check)
-		{
+		if($check){
 			$data = $stm->fetchAll(PDO::FETCH_OBJ);
 			if(is_array($data) && count($data) > 0){
 				return $data;
@@ -40,7 +37,6 @@ class Database {
 		else{
 			return false;
 		}
-
 	}
 
 	public function write($query, $data = []){
@@ -56,12 +52,10 @@ class Database {
 			}
 		}
 		else{
-
 			$check = $stm->execute($data);
 		}
 
-		if($check)
-		{
+		if($check){
 			return true;
 		}
 		else{

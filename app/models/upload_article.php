@@ -1,6 +1,6 @@
 <?php
 
-Class upload_article {
+class upload_article {
 
 	public function upload($POST, $FILES){
 		$DB = new Database();
@@ -11,6 +11,14 @@ Class upload_article {
 			$allowed[] = "image/jpeg";
 
 			if($FILES['file']['name'] != "" && $FILES['file']['error'] == 0 && in_array($FILES['file']['type'], $allowed)){
+				$folder = "uploads/";
+
+				if(!file_exists($folder)){
+					mkdir($folder, 0777, true);
+				}
+
+				$destination = $folder . $FILES['file']['name'];
+
 				show($POST);
 				show($FILES);
 				die;
@@ -21,22 +29,25 @@ Class upload_article {
 			}
 
 			if($_SESSION['error'] == ""){
-			// Saving to the database
-			$arr['title'] = $POST['title'];
-			$arr['description'] = $POST['description'];
-			$arr['category'] = $POST['category'];
-			$arr['article-content'] = $POST['article-content'];
-			$arr['img_url'] = "image_url_address";
-			$arr['date'] = date("Y-m-d H:i:s");
-			$arr['author'] = $_SESSION['username'];
-			$arr['published'] = "0";
-			$arr['article-content'] = $POST['article-content'];
+				// Saving to the database
+				$arr['ArticleTitle'] = $POST['title'];
+				$arr['ArticleDescription'] = $POST['description'];
+				$arr['ArticleCategory'] = $POST['category'];
+				$arr['ArticleContent'] = $POST['articlecontent'];
+				$arr['MainImgURL'] = "img url";
+				$arr['ArticleDate'] = date("Y-m-d H:i:s");
+				$arr['ArticleAuthor'] = $_SESSION['username'];
+				$arr['published'] = "0";
+				$arr['ArticleID'] = "0";
 
-			$query = "insert into articles (ArticleID, ArticleTitle, ArticleDescription, ArticleCategory, ArticleDate, MainImgURL, ArticleContent, ArticleAuthor, published) values (:title, :description, :category, :date, :img_url, :article-content, :author, :published)";
-			$data = $DB->write($query, $arr);
+				show($FILES);
+				show($arr);
+				$query = "insert into articles (ArticleID, ArticleTitle, ArticleDescription, ArticleCategory, ArticleDate, MainImgURL, ArticleContent, ArticleAuthor, published) values (:ArticleID, :ArticleTitle, :ArticleDescription, :ArticleCategory, :ArticleDate, :MainImgURL, :ArticleContent, :ArticleAuthor, :published)";
+
+				$data = $DB->write($query, $arr);
 
 				if($data){
-					header("Location: " . URL);
+					header("Location: " . URL . "/public/");
 					die();
 				}
 				else {
