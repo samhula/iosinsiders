@@ -1,6 +1,7 @@
 <?php
 	# Setting server-wide constants
 	define('URL', 'http://localhost/iOSInsiders');
+	define('LOCAL_URL', 'C:/xampp/htdocs/iOSInsiders');
 	define('WEBSITE_NAME', 'TechRatz');
 
 	# Navigation Categories

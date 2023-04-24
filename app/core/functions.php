@@ -13,17 +13,17 @@
 			echo '<li><a href="'.URL.'/public/'.strtolower($category).'">'.$category.'</a></li>';
 		}
 
-			// echo '<li>';
-			// echo '	<form method="GET" action="#">';
-			// echo '	<input type="text" placeholder="Search.." name="search">';
-	   		// echo '	<button type="submit">Submit</button>';
-			// echo '	</form>';
-			// echo '</li>';
-			// echo '<a href="#" class="toggle-hamburger">';
-			// echo '	<span class="hamburger-bar"></span>';
-			// echo '	<span class="hamburger-bar"></span>';
-			// echo '	<span class="hamburger-bar"></span>';
-			// echo '</a> ';
+			echo '<li>';
+			echo '	<form method="GET" action="#">';
+			echo '	<input type="text" placeholder="Search.." name="search">';
+	   		echo '	<button type="submit">Submit</button>';
+			echo '	</form>';
+			echo '</li>';
+			echo '<a href="#" class="toggle-hamburger">';
+			echo '	<span class="hamburger-bar"></span>';
+			echo '	<span class="hamburger-bar"></span>';
+			echo '	<span class="hamburger-bar"></span>';
+			echo '</a> ';
 		
 	}
 
@@ -39,3 +39,24 @@
 			echo '<option value="'.$category.'">'.$category.'</option>';
 		}
 	}
+
+	function parseDate($date){
+		echo $date;
+	}
+
+	function titleToURL($title){
+		return strtolower(str_replace(' ', '-', $title));
+	}
+
+	function sanitiseInputs($input){
+		return htmlentities(trim($input));
+	}
+
+	function sanitiseInputsArr($arr){
+		foreach($arr as $value){
+			htmlentities($value);
+		}
+
+		return $arr;
+	}
+

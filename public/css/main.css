@@ -246,6 +246,10 @@ footer ul li a {
 	padding: 1%;
 }
 
+.thumbnail {
+	width: 20%;
+}
+
 .recent-article {
 	margin-left: 0%;
 }
@@ -373,9 +377,9 @@ img {
 	font-style: italic;
 }
 
-.main-article-image {
+.main-article-image{
 	margin: 2% 1%;
-	width: 80%;
+	width: 70%;
 }
 
 .article-paragraph {
@@ -407,4 +411,35 @@ h3 {
 	.table-of-contents {
 		display: none;
 	}
+
+	.main-article-image {
+		width: 92%;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.thumbnail {
+		width: 100%;
+	}
+}
+
+.table-css {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table-css thead tr {
+	justify-content: space-evenly;
+}
+
+.table-css tbody tr {
+	justify-content: space-evenly;
+}
+
+.manage {
+	width: 88%;
+}
+
+.flex-container {
+	display: flex;
 }

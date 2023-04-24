@@ -8,21 +8,27 @@ class Upload extends Controller {
 	}
 
 	public function article(){
-		$user = $this->model("user");
+		if(isset($_SESSION['username'])){
+			$user = $this->model("user");
 
-		$result = True;
+			$result = True;
 
-		// if(!$result = $user->isLoggedIn()){
-		// 	header("Location:" . URL . "/public/login");
-		// 	die;
-		// }
+			// if(!$result = $user->isLoggedIn()){
+			// 	header("Location:" . URL . "/public/login");
+			// 	die;
+			// }
 
-		if(isset($_POST['title']) && isset($_FILES['file'])){
-			$uploader = $this->model("upload_article");
-			$uploader->upload($_POST, $_FILES);
+			if(isset($_POST['title']) && isset($_FILES['file'])){
+				$uploader = $this->model("upload_article");
+				$uploader->upload($_POST, $_FILES);
+			}
+
+			$data['page_title'] = "Upload";
+			$this->view("home/upload", $data);
 		}
-
-		$data['page_title'] = "Upload";
-		$this->view("home/upload", $data);
+		else {
+			header("Location:" . URL . "/public/");
+			die();
+		}
 	}
 }

@@ -77,7 +77,26 @@
 		</div>
 	</div>
 	<div class="homepage-articles">
-		<div class="element">
+
+		<a href=""></a>
+		<?php
+			if(is_array($data['posts'])){
+				foreach ($data['posts'] as $item) {
+					echo '<div class="element">';
+					echo '<img class="thumbnail" src="' . URL . '/public/' . $item->MainImgURL . '">';
+					echo '<a href="'.URL. '/public/post/'.$item->ArticleID.'/'.titleToURL($item->ArticleTitle).'"><h4>'.$item->ArticleTitle.'</h4></a>';
+					echo '<div>';
+					echo $item->ArticleDescription;
+					echo '</div>';
+					echo '<div>';
+					echo 'Category: ';
+					echo '<a href="'.URL.'/public/'.strtolower($item->ArticleCategory).'">'.$item->ArticleCategory.'</a>';
+					echo '</div>';
+					echo '</div>';
+				}
+			}
+		?>
+		<!-- <div class="element">
 				This is some text.
 		</div>
 		<div class="element">
@@ -103,11 +122,6 @@
 		</div>
 		<div class="element">
 				This is some text.
-		</div>
+		</div> -->
 	</div>
-	<?php
-		if(isset($_SESSION['username'])){
-			echo 'Hi '. $_SESSION['username']; 
-		}
-	?>
 </body>
