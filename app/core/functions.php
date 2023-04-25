@@ -13,17 +13,17 @@
 			echo '<li><a href="'.URL.'/public/'.strtolower($category).'">'.$category.'</a></li>';
 		}
 
-			echo '<li>';
-			echo '	<form method="GET" action="#">';
-			echo '	<input type="text" placeholder="Search.." name="search">';
-	   		echo '	<button type="submit">Submit</button>';
-			echo '	</form>';
-			echo '</li>';
-			echo '<a href="#" class="toggle-hamburger">';
-			echo '	<span class="hamburger-bar"></span>';
-			echo '	<span class="hamburger-bar"></span>';
-			echo '	<span class="hamburger-bar"></span>';
-			echo '</a> ';
+			// echo '<li>';
+			// echo '	<form method="GET" action="#">';
+			// echo '	<input type="text" placeholder="Search.." name="search">';
+	   		// echo '	<button type="submit">Submit</button>';
+			// echo '	</form>';
+			// echo '</li>';
+			// echo '<a href="#" class="toggle-hamburger">';
+			// echo '	<span class="hamburger-bar"></span>';
+			// echo '	<span class="hamburger-bar"></span>';
+			// echo '	<span class="hamburger-bar"></span>';
+			// echo '</a> ';
 		
 	}
 
@@ -34,9 +34,14 @@
 		}
 	}
 
-	function chooseCategory($cat){
+	function chooseCategory($cat, $chosen = ''){
 		foreach ($cat as $category) {
-			echo '<option value="'.$category.'">'.$category.'</option>';
+			if ($chosen == $category){
+				echo '<option value="'.$category.'" selected>'.$category.'</option>';
+			}
+			else {
+				echo '<option value="'.$category.'">'.$category.'</option>';
+			}
 		}
 	}
 
@@ -60,3 +65,7 @@
 		return $arr;
 	}
 
+	function parseUrl(){
+		$url = isset($_GET['url']) ? $_GET['url'] : "home";
+		return explode("/", filter_var(trim($url,"/"),FILTER_SANITIZE_URL));
+	}

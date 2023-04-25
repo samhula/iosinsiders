@@ -30,7 +30,7 @@ class upload_article {
 					$arr['MainImgURL'] = $destination;
 					$arr['ArticleDate'] = sanitiseInputs(date("Y-m-d H:i:s"));
 					$arr['ArticleAuthor'] = sanitiseInputs($_SESSION['username']);
-					$arr['published'] = "1";
+					$arr['published'] = "0";
 					$arr['ArticleID'] = "0";
 
 					show($FILES);

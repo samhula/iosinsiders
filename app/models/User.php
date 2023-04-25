@@ -38,7 +38,7 @@ class User{
 			$arr['username'] = $POST['username'];
 			$arr['password'] = $POST['password'];
 			$arr['email'] = $POST['email'];
-			$arr['role'] = "admin";
+			$arr['role'] = "user";
 
 
 			$query = "insert into users (Username, ePassword, Email, Role) values (:username, :password, :email, :role)";

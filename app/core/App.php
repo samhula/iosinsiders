@@ -90,8 +90,7 @@ Class App
  		call_user_func_array([$this->controller,$this->method], $this->params);
 	}
 
-	private function parseURL()
-	{
+	private function parseURL(){
 		$url = isset($_GET['url']) ? $_GET['url'] : "home";
 		return explode("/", filter_var(trim($url,"/"),FILTER_SANITIZE_URL));
 	}
