@@ -5,10 +5,10 @@ The aim of [Tech Website](https://www.google.com) is to provide users a place to
 ## Aims
 - [x] - Connect to a database
 - [x] - Integrate login functionality
-- [ ] - Make it mobile responsive
+- [x] - Make it mobile responsive
 - [ ] - Create, Read, Update and Delete articles (CRUD)
 - [ ] - Restrict image uploads to SVG files
 - [ ] - Implement an article review feature
 - [ ] - Publish and Unpublish article feature
-- [ ] - Implement user roles
+- [x] - Implement user roles
 - [ ] - Set certain permissions 

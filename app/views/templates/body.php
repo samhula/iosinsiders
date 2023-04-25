@@ -83,8 +83,7 @@
 			if(is_array($data['posts'])){
 				foreach ($data['posts'] as $item) {
 					echo '<div class="element">';
-					echo '<img class="thumbnail" src="' . URL . '/public/' . $item->MainImgURL . '">';
-					echo '<a href="'.URL. '/public/post/'.$item->ArticleID.'/'.titleToURL($item->ArticleTitle).'"><h4>'.$item->ArticleTitle.'</h4></a>';
+					echo '<a href="'.URL. '/public/post/'.$item->ArticleID.'/'.titleToURL($item->ArticleTitle).'"><img class="img-hover-zoom thumbnail" src="' . URL . '/public/' . $item->MainImgURL . '"><h4>'.$item->ArticleTitle.'</h4></a>';
 					echo '<div>';
 					echo $item->ArticleDescription;
 					echo '</div>';
@@ -96,32 +95,5 @@
 				}
 			}
 		?>
-		<!-- <div class="element">
-				This is some text.
-		</div>
-		<div class="element">
-				This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. This is some text. 
-		</div>
-		<div class="element">
-				This is some text. This is some text. This is some text. 
-		</div>
-		<div class="element">
-				This is some text.
-		</div>
-		<div class="element">
-				This is some text.
-		</div>
-		<div class="element">
-				This is some text.
-		</div>
-		<div class="element">
-				This is some text.
-		</div>
-		<div class="element">
-				This is some text.
-		</div>
-		<div class="element">
-				This is some text.
-		</div> -->
 	</div>
 </body>
