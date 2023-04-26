@@ -2,7 +2,7 @@
 
 class Article {
 	public function getPostsPublished(){
-		$query = "select * from articles WHERE published='1' order by ArticleDate DESC limit 12";
+		$query = "select * from articles WHERE published='1' order by ArticleDate DESC";
 
 		$DB = new Database(); 
 		$data = $DB->read($query);

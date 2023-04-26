@@ -23,11 +23,6 @@ class Dashboard extends Controller {
 		$posts = $this->model("Article");
 		$response = $posts->getPostsAll();
 
-		if(isset($_POST['publish'])){
-			$publishArticle = $this->model("article");
-			$publishArticle->publishPost($ID);
-		}
-
 		$data['all_posts'] = $response;
 		$data['users'] = '';
 
