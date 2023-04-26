@@ -1,7 +1,8 @@
 const file = document.getElementById('file');
+const thumbnailText = document.getElementById('current-img-text');
 const thumbnail = document.getElementById('current-img');
 
-const interval = setInterval(checkFile, 1000);
+const interval = setInterval(checkFile, 500);
 
 function stopCheck(){
 	clearInterval(interval);
@@ -14,6 +15,7 @@ function checkFile(){
 	else {
 		console.log("new file selected");
 		stopCheck();
+		thumbnailText.innerText = "New Image Uploaded";
 		thumbnail.remove();
 	}
 }

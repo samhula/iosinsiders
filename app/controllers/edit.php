@@ -23,6 +23,8 @@ class Edit extends Controller{
 				header("Location:" . URL . "/public/");
 				die();
 			}
+
+			$update = $post->updatePost($_POST, $_FILES = '', $link);
 		}
 	}
 }

@@ -35,6 +35,7 @@ class upload_article {
 
 					show($FILES);
 					show($arr);
+					
 					$query = "insert into articles (ArticleID, ArticleTitle, ArticleDescription, ArticleCategory, ArticleDate, MainImgURL, ArticleContent, ArticleAuthor, published) values (:ArticleID, :ArticleTitle, :ArticleDescription, :ArticleCategory, :ArticleDate, :MainImgURL, :ArticleContent, :ArticleAuthor, :published)";
 
 					$data = $DB->write($query, $arr);
