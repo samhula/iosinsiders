@@ -248,7 +248,11 @@ footer ul li a {
 }
 
 .thumbnail {
-	width: 20%;
+	width: 80%;
+}
+
+.recent-thumbnail {
+	width: 50%
 }
 
 .recent-article {
@@ -402,19 +406,24 @@ h3 {
 		display: block;
 	}
 
-	.nav-links li {
+	.nav-links li a {
 		display: none;
 	}
 
 	.wrapper {
 		display: block;
 	}
+
 	.table-of-contents {
 		display: none;
 	}
 
 	.main-article-image {
 		width: 92%;
+	}
+
+	h1 {
+		text-align: center;
 	}
 }
 
@@ -478,4 +487,8 @@ h3 {
 
 .image-uploader {
 	margin: 2%;
+}
+
+.actual-content {
+	letter-spacing: 0.2px;
 }

@@ -37,5 +37,4 @@
 		</div>
 	</form>
 	<script type="text/javascript" src="<?php echo URL?>/public/js/edit.js"></script>
-	<form>
 </body>

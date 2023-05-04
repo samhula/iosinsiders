@@ -62,6 +62,7 @@ class Article {
 		if (isset($POST['delete-article'])){
 			$this->deletePost($ID);
 			header("Location: " . URL . "/public/dashboard/articles");
+			unset($POST['delete-article']);
 			die();
 		}
 		else {
@@ -85,7 +86,7 @@ class Article {
 					$ArticleDescription = sanitiseInputs($POST['description']);
 					$ArticleCategory = sanitiseInputs($POST['category']);
 					$ArticleContent = sanitiseInputs($POST['articlecontent']);
-					$MainImgURL = $destination;
+					//$MainImgURL = $destination;
 					$ArticleDate = sanitiseInputs(date("Y-m-d H:i:s"));
 					$ArticleAuthor = sanitiseInputs($_SESSION['username']);
 					$ArticleID = $ID;
@@ -103,8 +104,7 @@ class Article {
 						$_SESSION['error'] = "Error updating article";
 					}
 				}
-			
-		}
+			}
 		}
 	}
 

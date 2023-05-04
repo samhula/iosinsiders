@@ -13,10 +13,10 @@ class Users {
 		return false;
 	}
 
-	public function updateUser(){
-		$query = "update users ";
+	// public function updateUser(){
+	// 	$query = "update users ";
 
-		$DB = new Database();
-		$data = $DB->write();
-	}
+	// 	$DB = new Database();
+	// 	$data = $DB->write();
+	// }
 }

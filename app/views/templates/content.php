@@ -5,7 +5,7 @@
 	<div class="content-container">
 		<div class="article flex-element-1">
 			<div class="wrapper">
-				<section class="content flex-element-1">
+				<section class="content flex-element-2">
 					<h2 class="article-title"><?php echo $data['post']->ArticleTitle?></h2>
 					<div class="info-container">
 						By <span class="author"><?php echo $data['post']->ArticleAuthor?></span><span class="bullet">&#x2022;</span>Updated on <span class="date-of-publish"><?php parseDate($data['post']->ArticleDate);?></span>
@@ -14,8 +14,12 @@
 					<!-- <div class="description-container">
 						This is the description
 					</div> -->
-					<h3 id="Heading-1">Heading 1</h3>
-					<p><?php echo $data['post']->ArticleContent?></p>
+					</br>
+					<?php
+						echo '<div class="actual-content">';
+						parseContent($data['post']->ArticleContent);
+						echo '</div>';
+					?>
 				</section>
 				<section class="element table-of-contents flex-element-1">
 					<div class="flex-element-1">

@@ -77,13 +77,11 @@
 		</div>
 	</div>
 	<div class="homepage-articles">
-
-		<a href=""></a>
 		<?php
 			if(is_array($data['posts'])){
 				foreach ($data['posts'] as $item) {
 					echo '<div class="element">';
-					echo '<a href="'.URL. '/public/post/'.$item->ArticleID.'/'.titleToURL($item->ArticleTitle).'"><img class="img-hover-zoom thumbnail" src="' . URL . '/public/' . $item->MainImgURL . '"><h4>'.$item->ArticleTitle.'</h4></a>';
+					echo '<a href="'.URL. '/public/post/'.$item->ArticleID.'/'.titleToURL($item->ArticleTitle).'"><img class="img-hover-zoom thumbnail recent-thumbnail" src="' . URL . '/public/' . $item->MainImgURL . '"><h4>'.$item->ArticleTitle.'</h4></a>';
 					echo '<div>';
 					echo $item->ArticleDescription;
 					echo '</div>';
