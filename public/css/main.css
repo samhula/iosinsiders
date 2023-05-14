@@ -172,7 +172,7 @@ footer ul li a {
 	}
 }
 
-.login-form input[type=text], .login-form input[type=password], .upload-content input[type=text], .upload-content select, .upload-content textarea{
+.login-form input[type=text], .login-form input[type=email], .login-form input[type=password], .upload-content input[type=text], .upload-content select, .upload-content textarea{
 	box-shadow: 0 0 5px #616161;
 	padding: 0.5%;
 	margin: 10px;
@@ -180,12 +180,12 @@ footer ul li a {
 	width: 50%;
 }
 
-.login-form input[type=text]:focus, .login-form input[type=password]:focus, .upload-content input[type=text]:focus, .upload-content textarea:focus{
+.login-form input[type=text]:focus, .login-form input[type=email]:hover,.login-form input[type=password]:focus, .upload-content input[type=text]:focus, .upload-content textarea:focus{
 	background-color: #d8e8f2;
 	outline: none;
 }
 
-.login-form input[type=text]:hover, .login-form input[type=password]:hover, .upload-content input[type=text]:hover, .upload-content textarea:hover{
+.login-form input[type=text]:hover, .login-form input[type=email]:hvoper, .login-form input[type=password]:hover, .upload-content input[type=text]:hover, .upload-content textarea:hover{
 	box-shadow: 0 0 5px #0e1e96;
 }
 
@@ -210,6 +210,12 @@ footer ul li a {
 
 .donate-banner, .element{
 	margin-top: 0;
+	width: 80%;
+/*	display: inline-block;*/
+}
+
+.figure {
+	margin-bottom: 0;
 }
 
 .select-content-type {
@@ -233,6 +239,7 @@ footer ul li a {
 
 .img-hover-zoom {
 	overflow: hidden;
+	width: 60%;
 }
 
 .img-hover-zoom .thumbnail {
@@ -248,11 +255,12 @@ footer ul li a {
 }
 
 .thumbnail {
-	width: 80%;
+	width: 100%;
 }
 
 .recent-thumbnail {
-	width: 50%
+	width: 100%
+/*	object-fit: contain;*/
 }
 
 .recent-article {
@@ -397,42 +405,6 @@ h3 {
 	font-size: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
-	.element{
-		width: 88%;
-	}
-
-	nav{
-		display: block;
-	}
-
-	.nav-links li a {
-		display: none;
-	}
-
-	.wrapper {
-		display: block;
-	}
-
-	.table-of-contents {
-		display: none;
-	}
-
-	.main-article-image {
-		width: 92%;
-	}
-
-	h1 {
-		text-align: center;
-	}
-}
-
-@media screen and (max-width: 650px){
-	.thumbnail {
-		width: 100%;
-	}
-}
-
 .table-css {
 	width: 100%;
 	border-collapse: collapse;
@@ -491,4 +463,60 @@ h3 {
 
 .actual-content {
 	letter-spacing: 0.2px;
+}
+
+.homepage-articles {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem 1rem;
+    grid-template-rows: masonry;
+}
+
+@media screen and (max-width: 768px) {
+	.element{
+		width: 88%;
+	}
+
+	nav{
+		display: block;
+	}
+
+	.nav-links li a {
+		display: none;
+	}
+
+	.wrapper {
+		display: block;
+	}
+
+	.table-of-contents {
+		display: none;
+	}
+
+	.main-article-image {
+		width: 92%;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	.homepage-articles {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.recent-article {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.thumbnail {
+		width: 100%;
+	}
+}
+
+.recent-article .latest-img{
+	height: 150px;
 }

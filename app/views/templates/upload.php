@@ -15,6 +15,11 @@
 					<option>Blog</option>
 				</select>
 				<input name="file" type="file" class="upload-button centre" required>
+				<?php
+					if ($_SESSION['error']){
+						echo $_SESSION['error'];
+					}
+				?>
 			</div>
 		</div>
 		<div class="flex-element-3">

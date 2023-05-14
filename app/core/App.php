@@ -10,7 +10,7 @@ class App
 	// Constructor to parse URL 
 	public function __construct()
 	{
-
+		$_SESSION['error'] = "";
 		$url = $this->parseURL();
 
 		// Check to see if the controller for $url[0] exists

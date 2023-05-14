@@ -37,20 +37,29 @@
 			<h2>Top Story</h2>
 			<hr>
 			<div class="top-story-content">
-				<div class="img-hover-zoom">
-					<img class="top-story-img thumbnail" src="https://media.4rgos.it/i/Argos/1121-m0014-m007-m050-m008-gaming-pcs-and-laptops-guide-as274382882?maxW=1200&qlt=75&fmt.jpeg.interlaced=true" width="500px" alt="Article Image">
-				</div>
-				<div class="story-contents">
-					<div>
-					Title
-					</div>
-					<div>
-						Description
-					</div>
-					<div>
-						Category
-					</div>
-				</div>
+				<?php
+				if(is_array($data['top_post'])){
+					foreach ($data['top_post'] as $top) {
+						echo '<div class="img-hover-zoom">';
+						echo '<a href="'.URL. '/public/post/'.$top->ArticleID.'/'.titleToURL($top->ArticleTitle).'"><img class="top-story-img thumbnail" src="' . URL . '/public/' . $top->MainImgURL . '"></a>';
+						echo '</div>';
+						echo '<div class="story-contents">';
+						echo '	<div>';
+						echo '<a href="'.URL. '/public/post/'.$top->ArticleID.'/'.titleToURL($top->ArticleTitle).'"><h4>'.$top->ArticleTitle.'</h4></a>';
+						echo '	</div>';
+						echo '	<div>';
+						echo $top->ArticleDescription;
+						echo '	</div>';
+						echo '	<div>';
+						echo $top->ArticleCategory;
+						echo '	</div>';
+						echo '</div>';
+					}
+				}
+				else {
+					echo 'not array';
+				}
+			?>
 			</div>
 		</article>
 		<!-- USE CONTROLLER TO GET THE CORRECT ARTICLES -->
@@ -62,26 +71,21 @@
 				Latest Posts
 			</h2>
 			<hr>
-			<article>
-				<div>
-				article here
-				</div>
-				<div class="recent-article-dotted"></div>
-			</article>
-			<article>
-				<div>
-					article here
-				</div>
-				<div class="recent-article-dotted"></div>
-			</article>
+			<?php
+				if(is_array($data['posts_latest'])){
+					foreach ($data['posts_latest'] as $latest) {
+						echo '<a href="'.URL. '/public/post/'.$latest->ArticleID.'/'.titleToURL($latest->ArticleTitle).'"><img class="latest-img" height="200px"src="' . URL . '/public/' . $latest->MainImgURL . '"></a><a><h4>'.$latest->ArticleTitle.'</h4></a>';
+					}
+				}
+			?>
 		</div>
 	</div>
 	<div class="homepage-articles">
 		<?php
 			if(is_array($data['posts'])){
 				foreach ($data['posts'] as $item) {
-					echo '<div class="element">';
-					echo '<a href="'.URL. '/public/post/'.$item->ArticleID.'/'.titleToURL($item->ArticleTitle).'"><img class="img-hover-zoom thumbnail recent-thumbnail" src="' . URL . '/public/' . $item->MainImgURL . '"><h4>'.$item->ArticleTitle.'</h4></a>';
+					echo '<div class="element figure">';
+					echo '<a href="'.URL. '/public/post/'.$item->ArticleID.'/'.titleToURL($item->ArticleTitle).'"><img class="img-hover-zoom thumbnail recent-thumbnail" src="' . URL . '/public/' . $item->MainImgURL . '"></a><a><h4>'.$item->ArticleTitle.'</h4></a>';
 					echo '<div>';
 					echo $item->ArticleDescription;
 					echo '</div>';

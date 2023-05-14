@@ -49,6 +49,9 @@ class upload_article {
 					}
 				}
 			}
+			else {
+				$_SESSION['error'] = "Incorrect file type";
+			}
 		}
 	}
 }

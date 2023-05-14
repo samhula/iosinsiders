@@ -25,12 +25,34 @@ class Article {
 		return false;
 	}
 
-	public function getPostsLimited($num){
-		$this->$limit = $num;
+	public function getPostsLatest(){
+		$query = "select * from articles WHERE published='1' order by ArticleDate DESC LIMIT 2";
+
+		$DB = new Database(); 
+		$data = $DB->read($query);
+
+		if(is_array($data)){
+			return $data;
+		}
+		return false;
 	}
 
+	public function getTopPost($link){
+		$query = "select * from articles WHERE ArticleID= :link AND published='1'";
+		$arr['link'] = $link;
+
+		$DB = new Database(); 
+		$data = $DB->read($query, $arr);
+
+		if(is_array($data)){
+			return $data;
+		}
+		return false;
+	}
+
+
 	public function getSinglePost($link){
-		$query = "select * from articles WHERE ArticleID= :link AND published='1' limit 1";
+		$query = "select * from articles WHERE ArticleID= :link AND published='1'";
 		$arr['link'] = $link;
 
 		$DB = new Database(); 

@@ -7,7 +7,7 @@ class User{
 		$_SESSION['error'] = "";
 		if(isset($POST['username']) && isset($POST['password'])){
 			$arr['username'] = $POST['username'];
-			$arr['password'] = $POST['password'];
+			$arr['password'] = crypt($POST['password'], SALT);
 
 
 			$query = "select * from users where Username = :username && ePassword = :password limit 1";
@@ -34,22 +34,30 @@ class User{
 		$DB = new Database();
 
 		$_SESSION['error'] = "";
-		if(isset($POST['username']) && isset($POST['password'])){
-			$arr['username'] = $POST['username'];
-			$arr['password'] = $POST['password'];
-			$arr['email'] = $POST['email'];
-			$arr['role'] = "user";
-
-
-			$query = "insert into users (Username, ePassword, Email, Role) values (:username, :password, :email, :role)";
-			$data = $DB->write($query, $arr);
-
-			if($data){
-				// Successful signup
-				header("Location: ".URL."/public/login");
+		if(isset($POST['username']) && isset($POST['password']) && isset($POST['repeat_password']) && isset($POST['email'])){
+			if($POST['username'] == ""){
+				$_SESSION['error'] = "Please enter a username";
 			}
-			else {
-				$_SESSION['error'] = "Uh oh! An error has occured!";
+			else if (crypt($POST['password'], SALT) != crypt($POST['repeat_password'], SALT)){
+				$_SESSION['error'] = "Passwords do not match";
+			}
+			else{
+				$arr['username'] = $POST['username'];
+				$arr['password'] = crypt($POST['password'], SALT);
+				$arr['email'] = $POST['email'];
+				$arr['role'] = "user";
+
+
+				$query = "insert into users (Username, ePassword, Email, Role) values (:username, :password, :email, :role)";
+				$data = $DB->write($query, $arr);
+
+				if($data){
+					// Successful signup
+					header("Location: ".URL."/public/login");
+				}
+				else {
+					$_SESSION['error'] = "Uh oh! An error has occured!";
+				}
 			}
 		}
 		else {
